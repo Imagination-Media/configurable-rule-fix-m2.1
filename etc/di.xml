@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\ResourceModel\Product">
+        <plugin name="im_postcollection"
+                type="ImaginationMedia\RuleFix\Model\Rule\Condition\Product\Plugin"
+                sortOrder="1"/>
+    </type>
+</config>
